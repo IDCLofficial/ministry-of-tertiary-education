@@ -1,103 +1,69 @@
-import Image from "next/image";
+import AboutMandateSection from "@/components/AboutMandateSection";
+import HeroSection from "@/components/HeroSection";
+import CommissionerSection from "@/components/CommissionerSection";
+import QuickLinksSection from "@/components/QuickLinksSection";
+import SkillUpSection from "@/components/SkillUpSection";
+import LatestNewsSection from "@/components/LatestNewsSection";
+import Stats from "@/components/Stats";
+import FeaturedPartners from "@/components/FeaturedPartners";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+     
+      {/* hero section */}
+      <HeroSection
+        backgroundImage="/images/homehero.jpg"
+        overlayText="Imo State Ministry of Tertiary and Technical Education"
+        heading="Advancing Higher Education."
+        subheading="Empowering Minds."
+        description="Championing academic excellence, innovation, and inclusive access to tertiary education across Imo State. Our mission is to nurture future leaders, foster research and technological advancement, and ensure that every student has the opportunity to reach their full potential."/>
+      {/* About Mandate Section */}
+      <AboutMandateSection
+        label="ABOUT US"
+        title="Our Mandate —"
+        subheading="Ministry of Tertiary and Technical Education"
+        description="Welcome to the Imo State Ministry of Tertiary and Technical Education. As the driving force behind higher education in Imo State, our Ministry is dedicated to fostering academic excellence, research, and innovation. We oversee the development and regulation of universities, polytechnics, and colleges, ensuring quality standards and equitable access for all. Our mission is to empower students, support educators, and build a knowledge-driven society that meets the demands of a global economy."
+        buttonText="Discover More"
+        image1="/images/school1.jpg"
+        image2="/images/student1.png"
+      />
+
+      {/* Commissioner Section */}
+      <CommissionerSection
+        imageSrc="/images/commisioner.jpg"
+        imageAlt="Commissioner for Tertiary and Technical Education in Imo State"
+        title="About The Commissioner"
+        bio="Honourable Professor Victor Ndubuisi Nwachukwu is a trailblazer and reformer in Nigeria’s higher education landscape, renowned for his dynamic leadership and unwavering commitment to excellence. As the Commissioner for Tertiary and Technical Education in Imo State, he is redefining what it means to lead in education—merging visionary policy, academic integrity, and bold innovation. With a legacy rooted in top-tier academia and strategic governance, he is igniting a new era of progress, inclusion, and opportunity for the youth."
+
+details="Professor Nwachukwu stands at the forefront of a revolution in tertiary education. He works hand-in-hand with universities, polytechnics, international development agencies, and tech-driven institutions to overhaul outdated systems, build state-of-the-art infrastructure, and create opportunities that empower students to thrive in a competitive global economy. Under his fearless leadership, Imo State is not just catching up—it’s setting the pace for educational transformation in Nigeria and beyond."
+/>
+      <div className="bg-white">
+
+      {/* Skill Up Section */}
+      <SkillUpSection />
+      {/* Quick Links Section */}
+      <QuickLinksSection />
+      {/* Latest News Section */}
+      <LatestNewsSection />
+      </div>
+
+      {/* Stats Section */}
+      <Stats />
+      {/* Featured Partners Section */}
+      <FeaturedPartners />
+      {/* CTASection */}
+      <CTASection
+        heading="Join Us in Advancing Higher Education"
+        subtext="Be part of our mission to create a world-class tertiary education system in Imo State, empowering students and educators for a brighter future."
+        buttonLabel="Contact Us"
+        buttonHref="/contact-us"
+      />
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }
