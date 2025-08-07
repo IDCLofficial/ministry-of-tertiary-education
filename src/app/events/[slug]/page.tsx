@@ -8,7 +8,7 @@ import { TopHero } from "@/components/TopHero";
 
 const event = {
   title: "1st International Conference on Sustainable Development",
-  img: "/images/uaes.webp",
+  img: "/images/profu.png",
   date: "SEPTEMBER 23–25, 2025",
   dateString: "2025-09-23T09:00:00",
   time: "9:00 am daily",

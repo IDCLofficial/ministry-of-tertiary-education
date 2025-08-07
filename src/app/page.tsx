@@ -19,7 +19,6 @@ export default function Home() {
         backgroundImage="/images/homehero.jpg"
         overlayText="Imo State Ministry of Tertiary and Technical Education"
         heading="Advancing Higher Education."
-        subheading="Empowering Minds."
         description="Championing academic excellence, innovation, and inclusive access to tertiary education across Imo State. Our mission is to nurture future leaders, foster research and technological advancement, and ensure that every student has the opportunity to reach their full potential."/>
       {/* About Mandate Section */}
       <AboutMandateSection

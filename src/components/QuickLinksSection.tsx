@@ -38,7 +38,7 @@ export default function QuickLinksSection() {
             key={link.title}
             className="relative flex flex-col mb-0 rounded-xl shadow-xl border border-gray-100 bg-white overflow-hidden transition-transform duration-200 hover:-translate-y-2 hover:shadow-2xl hover:scale-105"
           >
-            <div className="w-full h-[120px] sm:h-[200px] relative">
+            <div className="w-full h-[200px] relative">
               <Image
                 src={link.image}
                 alt={link.title}

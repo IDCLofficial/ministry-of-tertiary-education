@@ -8,3 +8,4 @@ export const newsList = [
     category: "Latest Updates",
   }, 
 ]; 
+

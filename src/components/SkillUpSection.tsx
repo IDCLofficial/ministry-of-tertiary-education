@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
+import AnimatedSection from "./AnimatedSection";
 
 export default function SkillUpSection() {
   return (
@@ -13,6 +14,8 @@ export default function SkillUpSection() {
 
       {/* Right: Text and Buttons */}
       <div className="w-[90%] md:w-[55%] flex-1 flex flex-col justify-center items-start max-w-2xl px-2 min-h-0">
+      <AnimatedSection>
+
         <h2 className="text-xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
           Accelerating Academic Excellence at Imo State University
         </h2>
@@ -22,6 +25,7 @@ export default function SkillUpSection() {
         <p className="text-gray-500 text-sm md:text-md lg:text-lg mb-8 max-w-[700px]">
           For the first time in the university’s history, all 34 academic programs received full accreditation—a landmark achievement that reflects the Ministry’s commitment to academic excellence. To complement these upgrades, the Ministry has launched specialized training programs to equip lecturers and administrators with the tools they need for effective teaching and institutional leadership.
         </p>
+        </AnimatedSection>
        
         <div className="flex flex-row gap-4 mt-4 overflow-x-auto whitespace-nowrap pb-2">
           <Link href="/about" style={{paddingTop: '.5rem', paddingBottom: '.5rem'}} className="bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-2 rounded text-lg transition-colors min-w-[140px] text-center">

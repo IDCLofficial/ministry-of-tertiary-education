@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import AnimatedSection from './AnimatedSection';
 
 interface CommissionerSectionProps {
   imageSrc: string;
@@ -36,16 +37,24 @@ export default function CommissionerSection({
 
         {/* Text Content */}
         <div className="flex-1 flex flex-col md:items-start px-2 w-full">
+          <AnimatedSection>
           <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-gray-900">
             {title}
           </h2>
+          </AnimatedSection>
+          <AnimatedSection>
+
           <p className="text-[#777777] text-base md:text-lg mb-4 mt-4">
             {bio}
           </p>
+          </AnimatedSection>
           <br />
+          <AnimatedSection>
+
           <p className="text-[#777777] text-base md:text-lg mb-6">
             {details}
           </p>
+          </AnimatedSection>
           <Link href="/services" className="px-7 py-3 bg-green-600 text-white rounded text-sm font-semibold shadow hover:bg-green-700 transition">
             <button>
               What we Do

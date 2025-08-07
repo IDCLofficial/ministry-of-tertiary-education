@@ -11,7 +11,7 @@ export default function EventsPage() {
       title: "1st International Conference on Sustainable Development",
       description:
         "Hosted by UAES Umuagwo under the aegis of the Ministry of Tertiary and Technical Education, this conference focuses on bridging agriculture, environment, and technology for sustainable growth.",
-      img: "/images/uaes.webp",
+      img: "/images/profu.png",
       details: `The University of Agriculture & Environmental Sciences will bring together policymakers, researchers, and industry leaders to discuss climate-smart farming practices, AI in environmental monitoring, and the socio-economic impacts of innovation.
       Registration opens soon and abstracts are accepted until 31 August 2025. :contentReference[oaicite:5]{index=5}`,
       dateString: "2025-09-23T09:00:00",
