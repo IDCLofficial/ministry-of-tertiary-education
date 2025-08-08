@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const info = {
     logo: "/images/IMSG-Logo.svg",
-    ministry: "Ministry of Tertiary and Technical Education",
+    ministry: "Tertiary and Technical Education",
     description: "The Imo State Ministry of Tertiary and Technical Education was created by the administration of His Excellency, Distinguished Senator Hope Uzodinma: the Governor of Imo State to facilitate the transformation of Imo State ",
     quickLinks: [
         {
@@ -55,8 +55,8 @@ const info = {
             href: "/"
         },
         {
-            label: "",
-            href: "#"
+            label: "+2348068410566",
+            href: "tel:+2348068410566"
         },  
         {
             label: "",
