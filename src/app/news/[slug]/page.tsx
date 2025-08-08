@@ -71,7 +71,7 @@ export default function NewsDetailPage() {
               <div className="flex-1 flex items-center">
                 <blockquote className="border-l-4 border-green-600 pl-4 italic text-gray-800">
                   <span className="font-bold">
-                    &ldquo;Rehabilitating our technical colleges is not just about buildings and tools—it's about building futures and empowering generations.&rdquo;
+                    Rehabilitating our technical colleges is not just about buildings and tools—it is about building futures and empowering generations.;
                   </span>
                 </blockquote>
               </div>
