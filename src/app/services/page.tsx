@@ -55,9 +55,9 @@ export default function Services() {
             
             {/* CTASection */}
             <CTASection
-          heading="Partner with Us for a Safer Imo State"
-          subtext="Join our mission to ensure the safety, security, and well-being of all residents through effective vigilance, community engagement, and rapid response."
-          buttonLabel="Contact Homeland Security"
+          heading="Partner with Us"
+          subtext="Join our mission to transform tertiary education in Imo State"
+          buttonLabel="Contact Us"
           buttonHref="/contact-us"
       />
             {/* Footer */}

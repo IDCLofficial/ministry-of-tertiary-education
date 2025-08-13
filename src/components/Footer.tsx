@@ -59,8 +59,8 @@ const info = {
             href: "tel:+2348068410566"
         },  
         {
-            label: "",
-            href: " "
+            label: "info.imominoftertiaryeducation@gmail.com",
+            href: "mailto:info.imominoftertiaryeducation@gmail.com"
         },
     ]
 }

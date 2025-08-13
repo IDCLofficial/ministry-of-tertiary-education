@@ -29,7 +29,7 @@ export default function ContactUsPage() {
         heading="Support Our Collaboration"
         subtext="Join us in supporting quality tertiary education, infrastructure development, and academic excellence in Imo State."
         buttonLabel="Projects"
-        buttonHref="/project"
+        buttonHref="/projects"
       />
       <Footer />
     </main>
