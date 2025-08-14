@@ -2,12 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { newsList } from "./newsData";
 
-import { NewsItem } from './newsData';
-
-interface NewsSearchBarProps {
-  newsList: NewsItem[];
-}
 
 function slugify(text: string) {
   return text
@@ -16,7 +12,7 @@ function slugify(text: string) {
     .replace(/(^-|-$)+/g, '');
 }
 
-export default function NewsSearchBar({ newsList }: NewsSearchBarProps) {
+export default function NewsSearchBar() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState(newsList);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -51,12 +47,13 @@ export default function NewsSearchBar({ newsList }: NewsSearchBarProps) {
     setShowSuggestions(false);
   }
 
-  // Reset search when newsList changes
   useEffect(() => {
-    setQuery("");
-    setResults(newsList);
-    setShowSuggestions(false);
-  }, [newsList]);
+    return () => {
+      setQuery("");
+      setResults(newsList);
+      setShowSuggestions(false);
+    };
+  }, []);
 
   return (
     <div className="w-full flex flex-col items-center py-8 bg-white relative">
