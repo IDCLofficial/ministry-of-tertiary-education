@@ -1,6 +1,6 @@
 'use client'
 
-import NewsSidebar from "./NewsSidebar";
+import NewsSidebar from "./NewsSidebar"
 import NewsSearchBar from "./NewsSearchBar";
 import NewsGrid from "./NewsGrid";
 import CTASection from "@/components/CTASection";
