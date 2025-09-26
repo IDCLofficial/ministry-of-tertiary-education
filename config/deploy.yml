@@ -7,7 +7,7 @@ image: idclofficial/ministry_of_tertiary_education
 # Deploy to these servers.
 servers:
   web:
-    - 15.237.252.202
+    - 35.180.24.186
 
 proxy:
   ssl: true
